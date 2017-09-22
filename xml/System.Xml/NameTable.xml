@@ -295,7 +295,7 @@
         <param name="start">The zero-based index into the array specifying the first character of the name.</param>
         <param name="len">The number of characters in the name.</param>
         <summary>Gets the atomized string containing the same characters as the specified range of characters in the given array.</summary>
-        <returns>The atomized string or <see langword="null" /> if the string has not already been atomized. If <paramref name="len" /> is zero, String.Empty is returned.</returns>
+        <returns>The atomized string or <see langword="null" /> if the string has not already been atomized. If <paramref name="len" /> is zero, String.Empty is returned.  If <paramref name="len" /> is negative, <see langword="null" /> is returned.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -315,8 +315,6 @@
  <paramref name="len" /> &gt;= <paramref name="key" />.Length  
   
  The above conditions do not cause an exception to be thrown if <paramref name="len" /> =0.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="len" /> &lt; 0.</exception>
       </Docs>
     </Member>
   </Members>
